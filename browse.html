@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="index.html">ConceptLearn</a>
+            <a class="navbar-brand fw-bold" href="index.html">ConceptLearn</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,41 +30,22 @@
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Available Courses</h2>
             <div class="btn-group">
-                <button class="btn btn-outline-secondary">Sort by: Price</button>
-                <button class="btn btn-outline-secondary">Subject</button>
+                <button class="btn btn-outline-dark">Sort by: Price</button>
+                <button class="btn btn-outline-dark">Subject</button>
             </div>
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">
-                        [AI Image: Maths Chalkboard]
-                    </div>
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/math_thumb.jpg" class="card-img-top" alt="Math Course" height="250" style="object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Mathematics</h5>
-                        <p class="card-text">Complete guide to calculus and algebra concepts.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$10.00</span>
+                        <h5 class="card-title fw-bold">Mathematics</h5>
+                        <p class="card-text text-muted">Complete guide to calculus and algebra concepts.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$10.00</span>
                             <span class="text-warning">★ 5.0</span>
-                        </div>
-                        <a href="details.html" class="btn btn-dark mt-3 w-100">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">
-                        [AI Image: Physics Formulas]
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Physics</h5>
-                        <p class="card-text">Mechanics, Thermodynamics, and Optics explained.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$10.99</span>
-                            <span class="text-warning">★ 4.8</span>
                         </div>
                         <button class="btn btn-dark mt-3 w-100" onclick="addToCart()">Add to Cart</button>
                     </div>
@@ -72,15 +53,28 @@
             </div>
 
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">
-                        [AI Image: Chemistry Lab]
-                    </div>
+                <div class="card h-100 shadow-sm border-0">
+                     <img src="images/physics_thumb.jpg" class="card-img-top" alt="Physics Course" height="250" style="object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">Chemistry</h5>
-                        <p class="card-text">Organic and Inorganic chemistry fundamentals.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$10.99</span>
+                        <h5 class="card-title fw-bold">Physics</h5>
+                        <p class="card-text text-muted">Mechanics, Thermodynamics, and Optics explained.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$10.99</span>
+                            <span class="text-warning">★ 4.8</span>
+                        </div>
+                        <a href="details.html" class="btn btn-outline-dark mt-3 w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                     <img src="images/chem_thumb.jpg" class="card-img-top" alt="Chemistry Course" height="250" style="object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Chemistry</h5>
+                        <p class="card-text text-muted">Organic and Inorganic chemistry fundamentals.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="h5 mb-0">$10.99</span>
                             <span class="text-warning">★ 4.9</span>
                         </div>
                         <button class="btn btn-dark mt-3 w-100" onclick="addToCart()">Add to Cart</button>
