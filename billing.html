@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription & Billing - ConceptLearn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="about.html" class="logo">ConceptLearn</a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact & FAQ</a></li>
+                    <li><a href="billing.html">Billing</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search tutorials...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="box">
+            <h2>Billing Information</h2>
+            <form id="billing-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+92 300 1234567" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City in Pakistan</label>
+                    <input type="text" id="city" placeholder="Islamabad, Lahore, Karachi, etc." required>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Select Plan</label>
+                    <select id="plan" required>
+                        <option value="">Choose a plan</option>
+                        <option value="maths">Mathematics Only - PKR 2000/month</option>
+                        <option value="physics">Physics Only - PKR 2000/month</option>
+                        <option value="chemistry">Chemistry Only - PKR 2000/month</option>
+                        <option value="all">All Subjects Bundle - PKR 5000/month</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <h2>Order Summary</h2>
+            <div class="order-summary">
+                <div class="summary-item">
+                    <span>Mathematics Subscription</span>
+                    <span>PKR 2,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Physics Subscription</span>
+                    <span>PKR 2,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Chemistry Subscription</span>
+                    <span>PKR 2,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Bundle Discount</span>
+                    <span>-PKR 1,000</span>
+                </div>
+                <div class="total">
+                    <span>Monthly Total</span>
+                    <span>PKR 5,000</span>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                    *Final price may vary based on your initial assessment quiz. Special rates for students in Islamabad.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About ConceptLearn</h3>
+                <p>ConceptLearn is Pakistan's premier A-Level success partner, based in Islamabad and serving students nationwide.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><strong>Email:</strong> billing@conceptlearn.pk</li>
+                    <li><strong>Phone:</strong> +92 51 123 4567</li>
+                    <li><strong>Address:</strong> Blue Area, Islamabad, Pakistan</li>
+                    <li><strong>Billing Support:</strong> Mon-Sat 9:00-18:00</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact & FAQ</a></li>
+                    <li><a href="billing.html">Subscription Plans</a></li>
+                    <li><a href="#">Payment Methods Pakistan</a></li>
+                    <li><a href="#">Student Discounts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ConceptLearn Pakistan. All rights reserved. | Based in Islamabad, Pakistan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
