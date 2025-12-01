@@ -10,75 +10,68 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top bg-white rounded-circle p-1">
                 ConceptLearn
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <form class="d-flex mx-auto" style="width: 50%;">
-                    <input class="form-control me-2" type="search" placeholder="Search courses...">
-                    <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-                </form>
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <ul class="navbar-nav mx-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="browse.html">Courses</a></li>
-                    <li class="nav-item ms-2">
-                        <a class="nav-link position-relative" href="checkout.html">
-                            <i class="bi bi-cart3 fs-5"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
-                        </a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link active" href="login.html"><i class="bi bi-person-circle fs-5"></i></a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 </ul>
+                <div class="d-flex align-items-center">
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2 form-control-sm" type="search" placeholder="Search...">
+                        <button class="btn btn-outline-light btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <a class="position-relative text-white me-3" href="checkout.html">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white">2</span>
+                    </a>
+                    <a class="text-white" href="login.html"><i class="bi bi-person-circle fs-5"></i></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+    <div class="container-fluid bg-light d-flex justify-content-center align-items-center" style="min-height: 85vh;">
+        <div class="card shadow border-0 p-4 rounded-4" style="max-width: 400px; width: 100%;">
             <h2 class="text-center mb-4">Login</h2>
             
             <form onsubmit="validateLogin(event)">
-                
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
-
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
                 </div>
-
                 <div class="mb-3 text-end">
-                    <a href="#" class="text-decoration-none small">Forgot Password?</a>
+                    <a href="#" class="text-decoration-none small text-primary">Forgot Password?</a>
                 </div>
-
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-dark">Login</button>
                 </div>
-
-                <div class="text-center my-3 text-muted">OR</div>
-                
+                <div class="text-center my-3 text-muted small">OR CONTINUE WITH</div>
                 <div class="d-grid gap-2">
                     <button type="button" class="btn btn-outline-danger">
-                        <i class="bi bi-google me-2"></i> Login with Google
+                        <i class="bi bi-google me-2"></i> Google
                     </button>
                     <button type="button" class="btn btn-outline-primary">
-                        <i class="bi bi-facebook me-2"></i> Login with Facebook
+                        <i class="bi bi-facebook me-2"></i> Facebook
                     </button>
                 </div>
             </form>
 
             <div class="text-center mt-3 pt-3 border-top">
-                <p class="mb-0">Don't have an account? <a href="#" class="text-decoration-none fw-bold">Sign Up</a></p>
+                <p class="mb-0 small">New user? <a href="#" class="text-decoration-none fw-bold text-primary">Create Account</a></p>
             </div>
         </div>
     </div>
