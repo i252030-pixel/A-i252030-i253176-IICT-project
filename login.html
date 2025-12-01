@@ -10,7 +10,8 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <!-- PART 1: Dark Navbar & Progress Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
                 <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top bg-white rounded-circle p-1">
@@ -21,15 +22,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="browse.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <form class="d-flex me-3">
-                        <input class="form-control me-2 form-control-sm" type="search" placeholder="Search...">
-                        <button class="btn btn-outline-light btn-sm" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
                     <a class="position-relative text-white me-3" href="checkout.html">
                         <i class="bi bi-cart3 fs-5"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white">2</span>
@@ -40,42 +36,19 @@
         </div>
     </nav>
 
-    <div class="container-fluid bg-light d-flex justify-content-center align-items-center" style="min-height: 85vh;">
-        <div class="card shadow border-0 p-4 rounded-4" style="max-width: 420px; width: 100%;">
-            <div class="text-center mb-4">
-                <h3 class="fw-bold text-primary">Welcome Back!</h3>
-                <p class="text-muted small">Please enter your details to sign in.</p>
-            </div>
-            
-            <form onsubmit="validateLogin(event)">
-                <div class="mb-3">
-                    <label for="email" class="form-label fw-semibold small">Email Address</label>
-                    <input type="email" class="form-control bg-light" id="email" placeholder="user@email.com" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="password" class="form-label fw-semibold small">Password</label>
-                    <input type="password" class="form-control bg-light" id="password" placeholder="••••••••" required>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="remember">
-                        <label class="form-check-label small" for="remember">Remember me</label>
-                    </div>
-                    <a href="#" class="text-decoration-none small text-primary">Forgot Password?</a>
-                </div>
-
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary py-2 fw-bold shadow-sm">Sign In</button>
-                </div>
-
-                <div class="text-center my-4 position-relative">
-                    <hr class="text-muted">
-                    <span class="position-absolute top-50 start-50 translate-middle px-2 bg-white small text-muted">OR</span>
-                </div>
-                
-                <div class="row g-2">
+    <div class="container mt-5 mb-5">
+        <!-- New "Steps" Indicator for better design -->
+        <div class="d-flex align-items-center mb-4 text-muted small">
+            <span class="fw-bold text-dark border-bottom border-primary border-2 pb-1">1. Cart</span>
+            <i class="bi bi-chevron-right mx-2"></i>
+            <span>2. Details</span>
+            <i class="bi bi-chevron-right mx-2"></i>
+            <span>3. Payment</span>
+        </div>
+        
+        <h2 class="mb-4 fw-bold text-primary">Your Cart (2 Items)</h2>
+        
+        <div class="row g-4"> <!-- Start of Main Row -->
                     <div class="col-6">
                         <button type="button" class="btn btn-outline-secondary w-100 btn-sm">
                             <i class="bi bi-google"></i> Google
