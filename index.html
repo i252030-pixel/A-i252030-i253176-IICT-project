@@ -40,70 +40,77 @@
     </div>
 </nav>
 
-    <header class="container my-5">
+<header class="bg-light py-5">
+    <div class="container my-4">
         <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h1 class="display-4 fw-bold">Master Your Concepts</h1>
-                <p class="lead text-muted">Expert-led tutorials for Physics, Math, and Chemistry.</p>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="images/physics_hero.jpg" class="img-fluid rounded-4 shadow-lg border border-5 border-white" alt="Hero Image">
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <h1 class="display-4 fw-bold text-primary">Unlock Your Potential</h1>
+                <p class="lead text-muted mb-4">Comprehensive video tutorials and resources for Physics, Math, and Chemistry students.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="browse.html" class="btn btn-dark btn-lg px-4">Browse Courses</a>
-                    <button class="btn btn-outline-secondary btn-lg px-4">View Demo</button>
+                    <a href="browse.html" class="btn btn-primary btn-lg px-4 shadow-sm">Start Learning</a>
+                    <button class="btn btn-outline-dark btn-lg px-4">View Demo</button>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img src="images/physics_hero.jpg" class="img-fluid rounded shadow" alt="Hero Image">
-            </div>
-        </div>
-    </header>
-
-    <div class="container mb-5">
-        <h2 class="text-center mb-4">Featured Courses</h2>
-        <div class="row">
-            
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/math_thumb.jpg" class="card-img-top" alt="Math" style="height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Mathematics</h5>
-                        <p class="card-text">Calculus and Algebra mastery.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="h5">$10.00</span>
-                            <button class="btn btn-dark">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/physics_thumb.jpg" class="card-img-top" alt="Physics" style="height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Physics</h5>
-                        <p class="card-text">Mechanics and Thermodynamics.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="h5">$10.99</span>
-                            <button class="btn btn-dark">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/chemistry_thumb.jpg" class="card-img-top" alt="Chemistry" style="height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Chemistry</h5>
-                        <p class="card-text">Organic and Inorganic basics.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="h5">$10.99</span>
-                            <button class="btn btn-dark">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
+</header>
+
+<div class="container my-5 py-4">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Popular Courses</h2>
+        <p class="text-muted">Explore our top-rated learning materials</p>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="images/math_thumb.jpg" class="card-img-top" alt="Math" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold">Mathematics</h5>
+                        <span class="badge bg-primary">Best Seller</span>
+                    </div>
+                    <p class="card-text text-muted">Calculus and Algebra mastery.</p>
+                    <div class="d-grid mt-3">
+                        <button class="btn btn-outline-primary">Add to Cart - $10.00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="images/physics_thumb.jpg" class="card-img-top" alt="Physics" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold">Physics</h5>
+                        <span class="badge bg-success">New</span>
+                    </div>
+                    <p class="card-text text-muted">Mechanics and Thermodynamics.</p>
+                    <div class="d-grid mt-3">
+                        <button class="btn btn-outline-primary">Add to Cart - $10.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="images/chemistry_thumb.jpg" class="card-img-top" alt="Chemistry" style="height: 220px; object-fit: cover;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold">Chemistry</h5>
+                        <span class="badge bg-info text-dark">Top Rated</span>
+                    </div>
+                    <p class="card-text text-muted">Organic and Inorganic basics.</p>
+                    <div class="d-grid mt-3">
+                        <button class="btn btn-outline-primary">Add to Cart - $10.99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer class="bg-dark text-white pt-5 pb-4 mt-5">
         <div class="container">
